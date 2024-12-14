@@ -1,0 +1,412 @@
+/* Общие стили */
+* {
+  font-family: 'PT Sans', Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+	padding: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 14px 0 16px 0;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Стили компонентов */
+
+/* Компонент Button */
+.default--button {
+  background-color: #E5266E;
+  color: white;
+  width: 100%;
+  border-radius: 4px;
+  padding: 14px 0 16px 0;
+  font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.default--button:hover {
+  background-color: #f13d82;
+}
+
+.default--button:disabled {
+  background-color: #D6DADE;
+  cursor: default;
+}
+
+/* Компонент LinkButton */
+.default--link-button {
+  color: #0848C0;
+  padding: 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.default--link-button:hover {
+  text-decoration: underline;
+}
+
+/* Компонент Input */
+.default--input-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.default--input {
+  height: 56px;
+  width: 100%;
+  color: #000;
+  padding: 16px 16px;
+  padding-right: 40px;
+  border: 1px solid #D6DADE;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 2px;
+  outline: none;
+  transition: all .1s ease-in;
+}
+
+.default--input:focus{
+  border: 1px solid #E5266E;
+}
+
+.default--input--with-label .default--input:focus,
+.default--input--with-label .default--input:not(:placeholder-shown) {
+  padding: 8px 16px;
+  padding-top: 22px;
+  padding-right: 40px;
+}
+
+.default--input-label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6a6e72;
+  cursor: text;
+  transition: all .1s ease-in;
+}
+
+.default--input--with-label .default--input:focus ~ .default--input-label,
+.default--input--with-label .default--input:not(:placeholder-shown) ~ .default--input-label {
+  top: 8px;
+  left: 16px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.default--input-label--required {
+  color: red;
+  font-size: 12px;
+  margin-right: 4px;
+}
+
+.default--input-error {
+  color: red;
+  margin-left: 16px;
+}
+
+.default--input-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: text;
+}
+
+/* Компонент Input UploadFile */
+.default--file-input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.default--file-input-wrapper input[type="file"] {
+  display: none;
+}
+
+.default--file-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 163px;
+  height: 163px;
+  border-radius: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-size: cover;
+  cursor: pointer;
+}
+
+.default--file-input__span {
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: underline;
+  color: white;
+  text-align: center;
+  max-width: 90px;
+}
+
+.default--file-input-label {
+  align-self: center;
+  margin-bottom: 12px;
+}
+
+.default--file-input-label__span {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #6a6e72;
+}
+
+.default--file-input-cancel-button {
+  position: absolute;
+  top: 8px;
+  right: 2px;
+  background-color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.default--file-input-cancel-icon {
+  line-height: 0;
+}
+
+/* Компонент Select */
+.default--select-wrapper {
+  position: relative;
+}
+
+.default--select {
+  height: 56px;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 16px;
+  border: 1px solid #D6DADE;
+  border-radius: 2px;
+  outline: none;
+  transition: all .1s ease-in;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.default--select:focus{
+  border: 1px solid #E5266E;
+}
+
+.default--select-with-label .default--select:focus,
+.default--select-with-label .default--select:not(:placeholder-shown) {
+  padding: 8px 16px;
+  padding-top: 22px;
+}
+
+.default--select-option {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 16px;
+}
+
+.default--select-label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6a6e72;
+  cursor: text;
+  transition: all .1s ease-in;
+}
+
+.default--select-with-label .default--select:focus ~ .default--select-label,
+.default--select-with-label .default--select:not(:placeholder-shown) ~ .default--select-label {
+  top: 8px;
+  left: 16px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.default--select-label--required {
+  color: red;
+  font-size: 12px;
+  margin-right: 4px;
+}
+
+.default--select-error {
+  color: red;
+  margin-left: 16px;
+}
+
+.default--select-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: text;
+  padding: 4px;
+}
+
+.default--select-icon img {
+  width: 12px;
+  height: 12px;
+}
+
+/* Компонент Typography */
+h1.default--typography,
+h2.default--typography,
+h3.default--typography,
+h4.default--typography {
+  font-weight: 800;
+  font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+  margin: 3px;
+}
+
+h2.default--typography {
+  font-size: 28px;
+  line-height: 34px;
+}
+
+/* Компонент Modal */
+.default--modal {
+  z-index: 1200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.42);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.default--modal-content {
+  max-height: 80%;
+  background-color: #fff;
+  width: 754px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 53px 98px;
+  border-radius: 12px;
+  overflow-y: scroll;
+}
+
+.default--modal ::-webkit-scrollbar {
+	width: 12px;
+}
+
+.default--modal ::-webkit-scrollbar-track {
+	background: transparent;
+  border-radius: 12px;
+}
+
+.default--modal ::-webkit-scrollbar-thumb {
+	background: #E5266E;
+	border: 2px solid #fff;
+	border-radius: 4px;
+}
+
+.default--modal ::-webkit-scrollbar-thumb:hover {
+	background: #f13d82;
+}
+
+/* Обычные стили */
+.modal-content__top-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 26px;
+  width: 100%;
+}
+
+.modal-content__top-content__left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.modal-content__top-content__right {
+  width: min-content;
+}
+
+.default--modal-content .default--button {
+  margin-top: 18px;
+  margin-bottom: -16px;
+}
+
+/* Адаптив (десктоп по умолчанию) */
+/* Планшеты */
+@media (max-width: 1024px) {
+  .default--modal-content {
+    width: 90%; /* Уменьшаем ширину модального окна */
+    padding: 20px; /* Уменьшаем отступы */
+  }
+
+  .default--button, .default--link-button {
+    font-size: 14px; /* Уменьшаем размер шрифта */
+  }
+}
+
+/* Мобилка */
+@media (max-width: 600px) {
+  .default--modal-content {
+    width: 100%; /* Модальное окно занимает всю ширину */
+    padding: 16px; /* Уменьшаем отступы */
+    border-radius: 0; /* Убираем скругление углов */
+  }
+
+  .modal-content__top-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .modal-content__top-content__right {
+    width: 100%;
+  }
+
+  .default--file-input-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .default--button {
+    font-size: 12px; /* Уменьшаем размер шрифта */
+    padding: 10px 0; /* Уменьшаем отступы */
+  }
+
+  .default--input {
+    height: 48px; /* Уменьшаем высоту инпута */
+    font-size: 14px; /* Уменьшаем размер шрифта */
+  }
+
+  .default--input-label {
+    font-size: 12px; /* Уменьшаем размер шрифта */
+  }
+}

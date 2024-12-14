@@ -1,0 +1,155 @@
+/* Шрифт Lato */
+@font-face {
+  font-family: 'Lato';
+  src: url('./Lato/Lato-Bold.ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./Lato/Lato-BoldItalic.ttf');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./Lato/Lato-SemiBold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./Lato/Lato-SemiBoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./Lato/Lato-Medium.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./Lato/Lato-MediumItalic.ttf');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('./Lato/Lato-Regular.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./Lato/Lato-Italic.ttf');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('./Lato/Lato-Light.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./Lato/Lato-LightItalic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Шрифт PT Sans */
+@font-face {
+  font-family: 'PT Sans';
+  src: url('./PTSans/PTSans-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('./PTSans/PTSans-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('./PTSans/PTSans-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('./PTSans/PTSans-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Шрифт Montserrat */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./Montserrat/Montserrat-ExtraBold.ttf');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./Montserrat/Montserrat-ExtraBoldItalic.ttf');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./Montserrat/Montserrat-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./Montserrat/Montserrat-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./Montserrat/Montserrat-Medium.ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./Montserrat/Montserrat-Medium.ttf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./Montserrat/Montserrat-Regular.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./Montserrat/Montserrat-Italic.ttf');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./Montserrat/Montserrat-Light.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./Montserrat/Montserrat-LightItalic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}

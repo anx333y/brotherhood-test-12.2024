@@ -4,7 +4,7 @@ export const createTableHead = (posts, postsTableHead) => {
   const postsKeys = Object.keys(posts[0]);
   const postsTableHeadFields = document.createElement('tr');
   postsKeys.forEach((key) => {
-    const postsTableHeadField = document.createElement('td');
+    const postsTableHeadField = document.createElement('th');
     postsTableHeadField.textContent = key;
     postsTableHeadFields.appendChild(postsTableHeadField);
   });

@@ -7,7 +7,7 @@ import createModal from './components/modal/index.js';
 import createSelect from './components/select/index.js';
 import createTypography from './components/typography/index.js';
 import createWrapper from './components/wrapper/index.js';
-import {changeFieldsHandler, openModalHandler} from './handlers.js';
+import {changeFieldsHandler} from './handlers.js';
 import {getInfoFromInputs, validateField} from './helpers.js';
 
 const rootElement = document.querySelector('#root');
@@ -148,7 +148,7 @@ const modalElements = createModal(
         attributes: {
           id: 'global'
         },
-        icon: '/practice-1/assets/icons/global.svg'
+        icon: './assets/icons/global.svg'
       }
     ),
     createInput(
@@ -157,7 +157,7 @@ const modalElements = createModal(
         attributes: {
           id: 'vk'
         },
-        icon: '/practice-1/assets/icons/vk.svg'
+        icon: './assets/icons/vk.svg'
       }
     ),
     createInput(
@@ -166,7 +166,7 @@ const modalElements = createModal(
         attributes: {
           id: 'odnoklassniki'
         },
-        icon: '/practice-1/assets/icons/odnoklassniki.svg'
+        icon: './assets/icons/odnoklassniki.svg'
       }
     ),
     createInput(
@@ -175,7 +175,7 @@ const modalElements = createModal(
         attributes: {
           id: 'facebook'
         },
-        icon: '/practice-1/assets/icons/facebook.svg'
+        icon: './assets/icons/facebook.svg'
       }
     ),
     createInput(
@@ -184,7 +184,7 @@ const modalElements = createModal(
         attributes: {
           id: 'instagram'
         },
-        icon: '/practice-1/assets/icons/instagram.svg'
+        icon: './assets/icons/instagram.svg'
       }
     ),
     createInput(
@@ -193,7 +193,7 @@ const modalElements = createModal(
         attributes: {
           id: 'youtube'
         },
-        icon: '/practice-1/assets/icons/youtube.svg'
+        icon: './assets/icons/youtube.svg'
       }
     ),
     createInput(

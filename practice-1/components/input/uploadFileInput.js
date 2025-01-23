@@ -43,7 +43,7 @@ const createUploadFileInput = (root, options) => {
   inputCancelFileBtn.type = 'button';
   inputCancelFileBtn.classList.add('default--file-input-cancel-button', 'hidden')
   const inputCancelFileIcon = createIcon(
-    '/practice-1/assets/icons/close.svg',
+    './assets/icons/close.svg',
     {
       classes: ['default--file-input-cancel-icon']
     }
@@ -59,7 +59,7 @@ const createUploadFileInput = (root, options) => {
     inputLabel.appendChild(inputLabelrequired);
   }
 
-  const icon = createIcon('/practice-1/assets/icons/uploadFile.svg');
+  const icon = createIcon('./assets/icons/uploadFile.svg');
 
   inputLabel.appendChild(inputLabelSpan);
 

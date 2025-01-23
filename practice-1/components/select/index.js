@@ -32,7 +32,7 @@ const createSelect = (root, options, values) => { // убрать остатки
 
   selectWrapper.appendChild(select);
 
-  const iconPath = options?.icon || '/practice-1/assets/icons/downArrow.svg';
+  const iconPath = options?.icon || './assets/icons/downArrow.svg';
 
   if (iconPath) {
     const selectIconWrapper = document.createElement('label');
